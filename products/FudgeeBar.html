@@ -60,6 +60,44 @@
     <tr><td>Fudgee bar</td><td>Pending</td></tr>
   </tbody>
 </table>
+    <label for="quantity">Quantity</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="20" required>
+
+    <fieldset>
+        <legend>
+            Delivery method
+        </legend>
+
+         <input type="radio" id="delivery-standard" name="delivery" value="standard" checked>
+        <label
+          for="delivery-standard">Standard delivery
+         </label>
+
+         <input type="radio" id="delivery-express" name="delivery" value="express">
+        <label for="delivery-express">Express delivery</label>
+
+         <input type="radio" id="delivery-pickup" name="delivery" value="pickup">
+         <label
+            for="delivery-pickup">Store pickup
+         </label>
+    </fieldset>
+
+    <fieldset>
+        <legend>Optional extras</legend>
+
+        <input type="checkbox" id="extra-giftwrap" name="extras" value="gift-wrapping">
+        <label 
+            for="extra-giftwrap">Gift wrapping
+        </label>
+
+        <input type="checkbox" id="extra-express-handling" name="extras" value="express-handling">
+        <label 
+           for="extra-express-handling">Express handling
+        </label>
+    </fieldset>
+
+<label for="email">Contact email</label>
+<input type="email" id="email" name="email" required>
     <section>
         <h2>This is the hub to enter the shop.</h2>
         <p>
