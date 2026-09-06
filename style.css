@@ -1,8 +1,8 @@
 :root {
-  --brand-color: #9c5b24;
-  --ink-color: #2a2420;
-  --muted-grey: #7d7368;
-  --light-bg: #f7f4ef;
+  --brand-color: #2f6fed;
+  --ink-color: #1a1a1a;
+  --muted-grey: #6b6b6b;
+  --light-bg: #f5f6fa;
 
   --font-heading: Georgia, "Iowan Old Style", "Palatino Linotype", serif;
   --font-body: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
@@ -35,6 +35,7 @@ header {
   flex-wrap: wrap;
   gap: 0.5rem 2rem;
   padding: 1.25rem 2rem;
+  background-color: var(--muted-grey);
   border-bottom: 2px solid var(--ink-color);
 }
 
@@ -43,7 +44,7 @@ header h1 {
   font-family: var(--font-heading);
   font-size: 1.5rem;
   font-weight: normal;
-  color: var(--ink-color);
+  color: var(--light-bg);
 }
 
 nav ul {
@@ -78,11 +79,11 @@ main {
 }
 
 footer {
-  color: var(--muted-grey);
+  color: var(--light-bg);
+  background-color: var(--muted-grey);
   text-align: left;
   padding: 1.5rem 2rem;
   margin-top: 3rem;
-  border-top: 1px solid var(--muted-grey);
   font-size: 0.9rem;
 }
 
@@ -171,6 +172,11 @@ input[type="submit"]:hover {
   filter: brightness(0.9);
 }
 
+button[type="submit"]:focus,
+input[type="submit"]:focus {
+  outline: 3px solid var(--ink-color);
+  outline-offset: 2px;
+}
 button[type="submit"]:focus,
 input[type="submit"]:focus {
   outline: 3px solid var(--ink-color);
