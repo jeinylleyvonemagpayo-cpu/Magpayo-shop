@@ -1,9 +1,9 @@
 :root {
-  --brand-color: #2f6fed;
-  --ink-color: #1a1a1a;
-  --muted-grey: #6b6b6b;
-  --light-bg: #f5f6fa;
-}
+    --brand-color: #2f6fed;
+    --ink-color: #1a1a1a;
+    --muted-grey: #6b6b6b;
+    --light-bg: #f5f6fa;
+      }
 
 *,
 *::before,
@@ -74,7 +74,7 @@ footer a {
   color: var(--brand-color);
 }
 
-.product-card {
+.place-card {
   background-color: #ffffff;
   border: 1px solid #e0e0e0;
   border-radius: 8px;
@@ -82,24 +82,24 @@ footer a {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
-.product-card img {
+.place-card img {
   width: 100%;
   height: auto;
   border-radius: 6px;
   margin-bottom: 0.75rem;
 }
 
-.product-card h3 {
+.place-card h3 {
   margin: 0 0 0.5rem;
   color: var(--ink-color);
 }
 
-.product-card p {
+.place-card p {
   color: var(--muted-grey);
   margin: 0 0 0.75rem;
 }
 
-.product-card .price {
+.place-card.detail {
   color: var(--brand-color);
   font-weight: bold;
   font-size: 1.1rem;
