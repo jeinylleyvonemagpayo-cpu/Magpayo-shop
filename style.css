@@ -94,6 +94,10 @@ article {
 article p {
   text-align: center;
 }
+
+article h3 {
+  text-align: center;
+}
 .product-card {
   background-color: #ffffff;
   border-left: 4px solid var(--brand-color);
