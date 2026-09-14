@@ -87,6 +87,13 @@ footer a {
   color: var(--brand-color);
 }
 
+article {
+  text-align: center;
+}
+
+article p {
+  text-align: center;
+}
 .product-card {
   background-color: #ffffff;
   border-left: 4px solid var(--brand-color);
