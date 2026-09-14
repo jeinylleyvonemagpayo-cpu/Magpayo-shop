@@ -1,9 +1,9 @@
 :root {
-    --brand-color: #2f6fed;
-    --ink-color: #1a1a1a;
-    --muted-grey: #6b6b6b;
-    --light-bg: #f5f6fa;
-      }
+  --brand-color: #2f6fed;
+  --ink-color: #1a1a1a;
+  --muted-grey: #6b6b6b;
+  --light-bg: #f5f6fa;
+}
 
 *,
 *::before,
@@ -27,6 +27,9 @@ header {
   background-color: #ffffff;
   border-bottom: 1px solid #e0e0e0;
   padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header h1 {
@@ -37,13 +40,9 @@ header h1 {
 nav ul {
   list-style: none;
   padding: 0;
-  margin: 0.5rem 0 0;
+  margin: 0;
   display: flex;
   gap: 1.5rem;
-}
-
-nav li {
-  display: inline-block;
 }
 
 nav a {
