@@ -24,9 +24,6 @@ a {
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   background-color: #ffffff;
   border-bottom: 1px solid #e0e0e0;
   padding: 1rem 2rem;
@@ -43,6 +40,10 @@ nav ul {
   margin: 0.5rem 0 0;
   display: flex;
   gap: 1.5rem;
+}
+
+nav li {
+  display: inline-block;
 }
 
 nav a {
@@ -73,7 +74,7 @@ footer a {
   color: var(--brand-color);
 }
 
-.place-card {
+.product-card {
   background-color: #ffffff;
   border: 1px solid #e0e0e0;
   border-radius: 8px;
@@ -81,24 +82,24 @@ footer a {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
-.place-card img {
+.product-card img {
   width: 100%;
   height: auto;
   border-radius: 6px;
   margin-bottom: 0.75rem;
 }
 
-.place-card h3 {
+.product-card h3 {
   margin: 0 0 0.5rem;
   color: var(--ink-color);
 }
 
-.place-card p {
+.product-card p {
   color: var(--muted-grey);
   margin: 0 0 0.75rem;
 }
 
-.place-card.detail {
+.product-card .price {
   color: var(--brand-color);
   font-weight: bold;
   font-size: 1.1rem;
