@@ -12,7 +12,7 @@
 
 *,
 *::before,
-*::as {
+*::after {
   box-sizing: border-box;
 }
 
@@ -74,6 +74,10 @@ main {
   padding: 2.5rem 2rem;
 }
 
+main > p {
+  text-align: center;
+}
+
 footer {
   color: var(--light-bg);
   background-color: var(--muted-grey);
@@ -87,47 +91,42 @@ footer a {
   color: var(--brand-color);
 }
 
+section {
+  text-align: center;
+}
+
+section h2 {
+  font-family: var(--font-heading);
+  color: var(--ink-color);
+}
+
 article {
-  text-align: center;
-}
-
-article p {
-  text-align: center;
-}
-
-article h3 {
-  text-align: center;
-}
-.product-card {
   background-color: #ffffff;
   border-left: 4px solid var(--brand-color);
   border-radius: 0 var(--radius) var(--radius) 0;
   padding: 16px;
   margin-bottom: 1.5rem;
+  text-align: center;
 }
 
-.product-card img {
+article img {
   width: 100%;
   height: auto;
   margin-bottom: 0.75rem;
 }
 
-.product-card h3 {
+article h3 {
   margin: 0 0 0.4rem;
   font-family: var(--font-heading);
   font-size: 1.35rem;
   color: var(--ink-color);
+  text-align: center;
 }
 
-.product-card p {
+article p {
   color: var(--muted-grey);
   margin: 0 0 0.75rem;
-}
-
-.product-card .price {
-  color: var(--brand-color);
-  font-weight: bold;
-  font-size: 1.1rem;
+  text-align: center;
 }
 
 fieldset {
