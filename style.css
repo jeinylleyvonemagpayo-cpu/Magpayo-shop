@@ -110,6 +110,7 @@ article {
 }
 
 article img {
+  max-width: 240px;
   width: 100%;
   height: auto;
   margin-bottom: 0.75rem;
