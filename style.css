@@ -30,7 +30,7 @@ a {
 
 header {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 0.5rem 2rem;
@@ -53,6 +53,10 @@ nav ul {
   margin: 0;
   display: flex;
   gap: 1.75rem;
+}
+
+nav li {
+  display: inline-block;
 }
 
 nav a {
@@ -116,7 +120,6 @@ article img {
   margin-bottom: 0.75rem;
 }
 
-
 article h3 {
   margin: 0 0 0.4rem;
   font-family: var(--font-heading);
@@ -175,6 +178,16 @@ input[type="submit"] {
   cursor: pointer;
 }
 
+button[type="submit"]:hover,
+input[type="submit"]:hover {
+  filter: brightness(0.9);
+}
+
+button[type="submit"]:focus,
+input[type="submit"]:focus {
+  outline: 3px solid var(--ink-color);
+  outline-offset: 2px;
+}
 button[type="submit"]:hover,
 input[type="submit"]:hover {
   filter: brightness(0.9);
