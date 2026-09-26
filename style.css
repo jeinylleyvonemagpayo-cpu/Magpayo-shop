@@ -10,6 +10,28 @@
   --radius: 4px;
 }
 
+.page {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  grid-template-areas:
+    "masthead masthead"
+    "side     main"
+    "foot     foot";
+  gap: 16px;
+}
+
+header { grid-area: masthead; }
+aside  { grid-area: side; }
+main   { grid-area: main; }
+footer { grid-area: foot; }
+
+aside {
+  background-color: #ffffff;
+  border-left: 4px solid var(--brand-color);
+  padding: 1rem;
+  text-align: left;
+}
+
 *,
 *::before,
 *::after {
