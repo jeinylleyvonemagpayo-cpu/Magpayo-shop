@@ -19,6 +19,11 @@ document.addEventListener('DOMContentLoaded', function () {
         'Piattos': 20,
         'Fudgee bar': 10
     };
+
+    document.getElementById('price-popsicle').textContent = prices['Popsicle'];
+    document.getElementById('price-piattos').textContent = prices['Piattos'];
+    document.getElementById('price-fudgee').textContent = prices['Fudgee bar'];
+    
     const taxRate = 0.12; 
 
     const productCount = document.querySelectorAll('article').length;
