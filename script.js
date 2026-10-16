@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('footer-text').textContent =
         '\u00A9 ' + currentYear + ' ' + shopName + ' \u00B7 Created by Magpayo Jeinylle';
 
-
+    //Since wla ako price Nilgay ko lng to for the sake namay price ma calculate
     const prices = {
         'Popsicle': 5,
         'Piattos': 20,
